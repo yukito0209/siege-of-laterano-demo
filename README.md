@@ -20,6 +20,12 @@ This is an anime-style First-Person Shooter (FPS) game demo developed with the U
     *   可射击目标 (Target) 能够承受伤害并在生命值耗尽时被销毁 (Shootable targets (Target) can take damage and are destroyed when health reaches zero)。
     *   在击中点生成简单的粒子特效作为视觉反馈 (Instantiates a simple particle effect at the hit point for visual feedback)。
     *   在控制台输出击中和伤害信息 (Logs hit and damage information to the console)。
+*   **基础武器显示 (Basic Weapon Display):**
+    *   使用占位符 Cube 作为武器模型，挂载在摄像机下 (Uses a placeholder Cube as a weapon model attached to the camera)。
+    *   使用双摄像机渲染层技术防止武器穿墙 (Uses dual camera rendering layer technique to prevent weapon clipping through walls)。
+*   **二次元渲染探索 (Anime Rendering Exploration):**
+    *   使用 Shader Graph 创建了基础卡通着色器 (`ToonCelShader`)，支持贴图和简单的两阶光照 (Created a basic cel shader using Shader Graph (`ToonCelShader`) supporting base map texture and simple two-tone lighting)。
+    *   尝试使用反转外壳方法创建描边效果 (`OutlineShader`) **(效果待调试 - Effect needs debugging)**。
 
 ## 如何运行 (How to Run)
 
@@ -41,12 +47,14 @@ This is an anime-style First-Person Shooter (FPS) game demo developed with the U
 
 ## 未来计划 (Roadmap)
 
-*   [x] 实现目标伤害与销毁 (Implement target damage & destruction)
-*   [ ] 添加基础武器模型和开火动画 (Add basic weapon model and firing animation)
-*   [ ] 添加射击特效 (枪口火焰、弹道、**完成: 击中效果**) (Add shooting VFX: muzzle flash, tracer, **Done: impact effect**)
-*   [ ] 实现简单的敌人 AI (Implement simple enemy AI)
-*   [ ] 探索二次元风格着色器 (Explore anime-style shaders)
-*   [ ] 构建基础关卡环境 (Build basic level environment)
+*   [x] 实现目标伤害与销毁
+*   [x] 添加基础武器模型占位符和防穿墙渲染
+*   [x] 添加射击特效 (击中效果)
+*   [ ] 添加射击特效 (枪口火焰、弹道)
+*   [ ] 实现简单的敌人 AI
+*   [x] 探索二次元风格着色器 (基础 Cel Shading + 贴图)
+*   [ ] **调试并完善描边效果**
+*   [ ] 构建基础关卡环境
 
 ---
 
